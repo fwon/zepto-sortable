@@ -1,7 +1,7 @@
 Sortable(UI) Zepto.js Plugin
 ============================
 
-**[Demos](http://fwon.cn/zepto-sortable)**
+**[Demos](http://fwon.cn/z-sortable/)**
 
 !!SUPPORT FOR MOBILE!!
 ----------------------
