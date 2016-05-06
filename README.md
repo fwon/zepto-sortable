@@ -11,11 +11,12 @@ This plugin uses Touch events and MouseEvent, so it can work both in mobile & pc
 
 Features
 --------
-
+use delegate event, can add item dynamically, add callback event
 * 2KB (minified).
 * Built using native Touch events [(can i use)](http://caniuse.com/#feat=touch) and MouseEvent [(can i use)](https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent) .
 * Supports list with vertical and horizontal **(not support grid style layouts yet)**.
 * Class control for move.
+* Can add item dynamically, which means you don't have to initial all items at first.
 
 Usage
 -----
@@ -36,14 +37,16 @@ Use `sortable` method to create a sortable list:
 ``` javascript
 $('#sortable').sortable({
     orient: 'vertical',
-    itemClassName: 'cont' //default 'cont'
+    itemClassName: 'cont', //default 'cont'
+    afterSort: function(){}
 });
 
 or
 
 $('#sortable').sortable({
     orient: 'horizontal',
-    itemClassName: 'cont' //default 'cont'
+    itemClassName: 'cont', //default 'cont'
+    afterSort: function(){}
 });
 ```
 
