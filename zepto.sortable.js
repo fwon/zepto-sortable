@@ -73,7 +73,8 @@
                     left: _left,
                     top: _top
                 });
-                //add class cont-n & data-pos
+                //add class cont-n & data-pos                
+                itemElements[i].className = itemClassName;
                 item.addClass(itemClassName + '-' + i);
                 item.attr('data-pos', i);
             }
